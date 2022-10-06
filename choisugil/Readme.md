@@ -14,3 +14,17 @@
 * Mongo dadabase 를 만들고 구름IDE 에서 node.js 로 만든 서버에 데이터 구현하기.  
 * https://blog.goorm.io/mern-boilerplate/ 구름 IDE morn 서버 설치.  
 * https://blog.goorm.io/mongo-db-atlas-cluster/ 몽고 Database 만들기.  
+- - -
+# Day 2
+- - -
+* 구름IDE 와 신호등 처리 아두이노 간의 통신을 시도. javascript net library 활용. 성공
+* 구름IDE 에서 몽고 DB 에 data 를 등록 하려고 했는데 실패. 업로드 가능한
+ 네트워크 IP 를 등록 해야 되는데 구름IDE ip/port 는 등록 되지 않음.
+* 구름IDE 에서 포트포워딩 해서 신호등 처리 간의 통신을 MORN 에서 시도 했지만
+ 포트가 2개만 제공됨... --> 몽고 DB 는 하지 않기로 함. 
+* database 는 mysql을 서버에서 직접 돌리는 것으로 진행 되어야 할거 같음.(나중에 여유가 되면 추가하기로). 
+* 3D 프린트 파츠 뽑는데 노즐이 막힘. 재료를 바꾸어서 프린트함. 아직은 잘 됨. 
+* openCV 라즈베리파이 영상 자료. 실행시킬 때 옵션만 바꾸면 됨. mjpeg
+* 스트리밍 서버를 설치해서 구명한 다음에 openCV 로 욜로를 돌려보는 것. Yolo2 tiny 같은 가벼운 weight 사용.
+* #!(shebang)-- 불어 해석기의 위치를 알려줌.
+* https://www.youtube.com/watch?v=6GECT2Jrr_g 리액트 기본 사용법 학습
