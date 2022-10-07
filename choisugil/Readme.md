@@ -28,3 +28,14 @@
 * 스트리밍 서버를 설치해서 구명한 다음에 openCV 로 욜로를 돌려보는 것. Yolo2 tiny 같은 가벼운 weight 사용.
 * #!(shebang)-- 불어 해석기의 위치를 알려줌.
 * https://www.youtube.com/watch?v=6GECT2Jrr_g 리액트 기본 사용법 학습
+- - -
+# Day 3
+- - -
+* 3D 프린트 파츠 불빛 출력 실패.
+* react server-client data transmition
+* https://www.youtube.com/watch?v=d6suykcsNeY 
+* postman install 
+* server-client connection by get, post using postman
+* fetch 패치 문제 해결.
+* cors problem solves 서버 클라이언트 공유 문제 해결
+*
