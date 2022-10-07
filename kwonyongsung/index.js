@@ -1,23 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import axios from 'axios';
 
-import CarGo from "../CarGo.js";
-import CarWait from "../CarWait.js";
-import CarStop from "../CarStop.js";
+import Car from './containers/car';
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-function App(){
-	let [picture, pictureChange] = useState(CarGo);
-	
-	
-	return <div className="App">
-		{picture}
-		
-		<!-- 데이터 받기 -> pictureChange(CarStop) -->
-		
-		<button onClick={ ()=>{ pictureChange(CarGo) } }>Go</button> &nbsp;
-		<button onClick={ ()=>{ pictureChange(CarWait) } }>Wait</button> &nbsp;
-		<button onClick={ ()=>{ pictureChange(CarStop) } }>Stop</button>
-	</div>
-}
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL;
 
-export default App;
+root.render(
+  <React.StrictMode>
+    <Car />
+  </React.StrictMode>
+);
