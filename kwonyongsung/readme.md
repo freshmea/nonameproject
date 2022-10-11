@@ -6,7 +6,7 @@ html, js로 홈페이지 신호등 구현
 ---
 # Day 2,3
 ---
-goormide에서 React 사용
+goormide에서 React 사용.
 프로젝트명/client/public에 image폴더 생성 후 그림 추가.
 src/components에 CarGO, CarWait, CarStop 추가
 
