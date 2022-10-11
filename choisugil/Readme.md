@@ -39,3 +39,10 @@
 * fetch 패치 문제 해결.
 * cors problem solves 서버 클라이언트 공유 문제 해결
 *
+
+- - -
+# Day 4
+- - -
+* https://www.dropbox.com/sh/j18l69uq8iw3bia/AAD1cA4NQPrWYx5ZoCjNV9q3a/work/python?dl=0&subfolder_nav_tracking=1
+* Yolo example  
+* Yolo 를 이용해서 사람을 찾는 예제. 리눅스 환경에서 파이썬으로 실행.
