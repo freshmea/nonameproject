@@ -46,3 +46,6 @@
 * https://www.dropbox.com/sh/j18l69uq8iw3bia/AAD1cA4NQPrWYx5ZoCjNV9q3a/work/python?dl=0&subfolder_nav_tracking=1
 * Yolo example  
 * Yolo 를 이용해서 사람을 찾는 예제. 리눅스 환경에서 파이썬으로 실행.
+* client 에서 신호 받았을 때, 화면 전환 시도.  -- > useEffect 에 signal 추가 
+* 서버에서 신호를 추가 하고 웹페이지 변화하게 만듬.
+* 아두이노 신호 처리 (내부 시그널이 돌아 가면서 신호가 올때만 파란불이 켜짐)

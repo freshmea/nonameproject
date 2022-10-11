@@ -28,6 +28,11 @@ var server = net.createServer(function(client){
   console.log('Client connected');    
   client.on('data', function(data){        
     console.log('Client sent ' + data.toString());
+    signal.push({
+        id: id++,
+        text: data.toString(),
+        done: false,
+    });
   });    
   client.on('end',function(){
     console.log('Client disconnected');
