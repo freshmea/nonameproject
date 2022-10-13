@@ -3,14 +3,18 @@ import React, { useState, useEffect } from 'react';
 import CarGo from "../CarGo.js";
 import CarWait from "../CarWait.js";
 import CarStop from "../CarStop.js";
+import Clock from "../Clock.js";
+import PersonIn from "../PersonIn.js";
+import PersonOut from "../PersonOut.js";
 
 
 function App() {
 	let [picture, pictureChange] = useState(CarGo);
+	let [person, personChange] = useState(PersonOut);
 	const [signal, setSignal] = useState(null);
 	const [state, setstate] = useState(null);
 	useEffect(() => {
-		fetch("https://kwonys.run.goorm.io/api/todo") //서버 주소
+		fetch("https://kwonys.run.goorm.io/api/todo")
 			.then((response) => response.json())
 			.then((data) => setSignal(data));
 		signal?.map((sig) => (
@@ -20,14 +24,22 @@ function App() {
 
 
 	useEffect(() => {
-		if (state === "CarGo\r\n") pictureChange(CarGo);
-		else if (state === "CarWait\r\n") pictureChange(CarWait);
-		else if (state === "CarStop\r\n") pictureChange(CarStop);
+		if (state === "PersonOut\n\r\n") personChange(PersonOut);
+		else if (state === "PersonIn\n\r\n") personChange(PersonIn);
+		if (state === "CarGo\n\r\n") pictureChange(CarGo);
+		else if (state === "CarWait\n\r\n") pictureChange(CarWait);
+		else if (state === "CarStop\n\r\n") pictureChange(CarStop);
 	}, [state])
 
 
 	return <div className="App">
-		{picture}
+		<div style={{ textAlign: "center", marginTop: "10%" }}>
+			<Clock />
+			<div style={{ marginTop: "5%" }}> </div>
+			{picture}
+			<p></p>
+			{person}
+		</div>
 	</div>
 }
 
