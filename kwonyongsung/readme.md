@@ -27,5 +27,6 @@ src/components에 CarGO, CarWait, CarStop 추가
 # Day 5
 ---
 가운데 정렬, 실시간 시계 추가
+
 사람 감지를 확인하는 것 임시 추가
 
