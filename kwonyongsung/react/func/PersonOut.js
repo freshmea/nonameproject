@@ -1,10 +1,16 @@
 
 function PersonOut(){
+	
+	const styleRed = {
+		color : "red"
+	}
+	
 	return(
 		<div className="Person">
-			<img src="image/person2.png" alt = ""/>
+			<h1>보행자 <font style = {styleRed}>없음</font></h1>
 		</div>
 	)
 }
+
 
 export default PersonOut;
