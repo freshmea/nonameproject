@@ -30,3 +30,8 @@ src/components에 CarGO, CarWait, CarStop 추가
 
 사람 감지를 확인하는 것 임시 추가
 
+---
+# Day 6
+---
+보행자 감지여부를 그림파일 -> 텍스트로 출력
+
