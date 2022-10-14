@@ -11,17 +11,15 @@ const port = config.get('port');
 const clientUrl = config.get('client');
 
 const app = express();
-// app.use(express.json());
-// app.use(express.urlencoded({extended = true}));
 app.use(cors());
 let id = 2;
 const signal = [
-	{
-	id : 1,
-	text : 'signal On',
-	done : false,
-	},
-			   ];
+    {
+    id : 1,
+    text : 'signal On',
+    done : false,
+    },
+               ];
 
 var net = require('net');
 var server = net.createServer(function(client){    
@@ -33,6 +31,12 @@ var server = net.createServer(function(client){
         text: data.toString(),
         done: false,
     });
+    signal[0] = {
+        id: id++,
+        text: data.toString(),
+        done: false,
+    };
+    
   });    
   client.on('end',function(){
     console.log('Client disconnected');
@@ -62,17 +66,17 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/api/todo', (req, res) => {
-	res.json(signal);
+    res.json(signal);
 });
 
 app.post('/api/todo', (req, res) =>{
-	const {text, done} = req.body;
-	signal.push({
-		id: id++,
-		text,
-		done,
-	});
-	return res.send('succeed');
+    const {text, done} = req.body;
+    signal.push({
+        id: id++,
+        text,
+        done,
+    });
+    return res.send('succeed');
 });
 
 db.once('open', function () {           
